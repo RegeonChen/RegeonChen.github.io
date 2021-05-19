@@ -92,3 +92,5 @@ friends: [
         href: "http://RainbomSea.github.io"
     }
 ]
+
+theme: jekyll-theme-cayman
