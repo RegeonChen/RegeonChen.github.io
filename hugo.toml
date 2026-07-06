@@ -1,0 +1,90 @@
+baseURL = 'https://regeonchen.github.io/'
+locale = 'zh-cn'
+title = "RegeonChen's Blog"
+theme = 'PaperMod'
+
+# 分页
+paginate = 10
+
+# 摘要长度
+summaryLength = 120
+
+# 启用 emoji
+enableEmoji = true
+
+[markup]
+  [markup.highlight]
+    style = 'dracula'
+    noClasses = false
+    guessSyntax = true
+    lineNos = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)'], ['$', '$']]
+
+# 分类法：标签 + 分类
+[taxonomies]
+  tag = 'tags'
+  category = 'categories'
+
+# 站点菜单
+[menu]
+  [[menu.main]]
+    name = '归档'
+    url = '/archives/'
+    weight = 10
+  [[menu.main]]
+    name = '标签'
+    url = '/tags/'
+    weight = 20
+  [[menu.main]]
+    name = '分类'
+    url = '/categories/'
+    weight = 30
+  [[menu.main]]
+    name = '搜索'
+    url = '/search/'
+    weight = 40
+  [[menu.main]]
+    name = '关于'
+    url = '/about/'
+    weight = 50
+
+# PaperMod 参数
+[params]
+  # 首页信息模式
+  [params.homeInfoParams]
+    Title = '你好，欢迎来到我的博客'
+    Content = '记录技术、分享思考、沉淀知识。'
+
+  # 社交图标
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/regeonchen'
+
+  # 显示选项
+  ShowReadingTime = true
+  ShowWordCount = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowPostNavLinks = true
+  ShowShareButtons = false
+  ShowToc = true
+  ShowSearch = true
+
+  # 作者
+  author = 'RegeonChen'
+
+  # 启用 MathJax
+  math = true
+
+  # 主题
+  defaultTheme = 'auto'
+  disableThemeToggle = false
+  hideSummary = false

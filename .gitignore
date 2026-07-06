@@ -1,0 +1,15 @@
+# Hugo
+public/
+resources/
+.hugo_build.lock
+
+# Node modules (if using any npm tools)
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
