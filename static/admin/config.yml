@@ -1,0 +1,63 @@
+backend:
+  name: github
+  repo: RegeonChen/RegeonChen.github.io
+  branch: main
+  base_url: https://api.github.com
+  auth_endpoint: /authorize
+  # 需要在 GitHub OAuth App 中获取 client_id
+  # 暂时留空，用户配置后填入
+
+media_folder: static/images
+public_folder: /images
+
+collections:
+  - name: "posts"
+    label: "博客文章"
+    label_singular: "文章"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - label: "标题"
+        name: "title"
+        widget: "string"
+      - label: "发布日期"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ssZ"
+        date_format: "YYYY-MM-DD"
+        time_format: "HH:mm:ss"
+        default: ""
+      - label: "草稿"
+        name: "draft"
+        widget: "boolean"
+        default: false
+      - label: "标签"
+        name: "tags"
+        widget: "list"
+        default: []
+      - label: "分类"
+        name: "categories"
+        widget: "list"
+        default: []
+      - label: "摘要"
+        name: "summary"
+        widget: "string"
+        required: false
+      - label: "正文"
+        name: "body"
+        widget: "markdown"
+
+  - name: "about"
+    label: "关于页面"
+    files:
+      - file: "content/about/index.md"
+        label: "关于我"
+        name: "about"
+        fields:
+          - label: "标题"
+            name: "title"
+            widget: "string"
+          - label: "正文"
+            name: "body"
+            widget: "markdown"
