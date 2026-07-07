@@ -25,3 +25,30 @@
 .first-entry .entry-content {
     margin: 8px 0;
 }
+
+/* ===== 博客标题 Logo 配色 ===== */
+/* 日间模式：Regeon 紫色，Chen 金色 */
+.site-title-regeon {
+    color: #8b5cf6;
+}
+.site-title-chen {
+    color: #c9a220;
+}
+
+/* 夜间模式：保持白色 */
+:root[data-theme="dark"] .site-title-regeon,
+:root[data-theme="dark"] .site-title-chen {
+    color: inherit;
+}
+
+/* ===== 菜单图标 ===== */
+.menu-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+.menu-icon svg {
+    width: 15px;
+    height: 15px;
+}
