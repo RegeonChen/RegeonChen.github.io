@@ -1,0 +1,10 @@
+﻿git : fatal: unable to access 'https://github.com/RegeonChen/RegeonChen.github.
+io.git/': Failed to connect to github.com port 443 after 21109 ms: Could not co
+nnect to server
+所在位置 行:1 字符: 5
++ & { git push origin main 2>&1 | Out-File -FilePath D:\MyBlog\push_out ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (fatal: unable t...nnect to server 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
