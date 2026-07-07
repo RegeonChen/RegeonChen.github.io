@@ -1,0 +1,27 @@
+/* 减少首页各区域留白 */
+:root {
+    --gap: 16px;
+    --content-gap: 14px;
+}
+
+/* 主页内容区域上下间距 */
+.main {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* 中间引语区域 - 减小高度和外边距 */
+.first-entry {
+    min-height: 160px;
+    margin: 0 0 var(--gap) 0;
+}
+
+/* 引语标题字号略小 */
+.first-entry .entry-header h1 {
+    font-size: 26px;
+}
+
+/* 引语内容间距 */
+.first-entry .entry-content {
+    margin: 8px 0;
+}
