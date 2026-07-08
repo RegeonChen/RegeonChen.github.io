@@ -3,7 +3,7 @@ backend:
   repo: RegeonChen/RegeonChen.github.io
   branch: main
   base_url: https://decap-oauth-gateway.3088059095.workers.dev
-  auth_endpoint: /authorize
+  auth_endpoint: auth
   client_id: Ov23liYlJLWsoYbasyvy
 
 media_folder: static/images
