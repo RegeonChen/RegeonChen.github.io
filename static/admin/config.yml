@@ -2,7 +2,7 @@ backend:
   name: github
   repo: RegeonChen/RegeonChen.github.io
   branch: main
-  base_url: https://api.github.com
+  base_url: https://decap-oauth-gateway.3088059095.workers.dev
   auth_endpoint: /authorize
   client_id: Ov23liYlJLWsoYbasyvy
 
